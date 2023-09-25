@@ -13,7 +13,13 @@ class Profile extends StatelessWidget {
         backgroundColor: Color(0xFF212832),
         body: SafeArea(
           child: Center(
-            child: Column(
+            child: SingleChildScrollView(
+              scrollDirection: Axis.vertical,
+              child: Column(children: [
+
+
+
+            Column(
               children: [
                 Padding(
                   padding: EdgeInsets.fromLTRB(0, 10, 0, 20),
@@ -183,7 +189,9 @@ class Profile extends StatelessWidget {
                 ),
               ],
             ),
+            ]),)
           ),
+
         ),
       ),
     );
